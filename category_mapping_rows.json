@@ -1758,5 +1758,10 @@
     "input_value": "^Potraviny podle diety \\> Potraviny bez palmového oleje$",
     "output_value": "Potraviny podľa diéty > Potraviny bez palmového oleja",
     "position": 353
+  },
+  {
+    "input_value": "^Zdravé potraviny \\> Vaření a pečení \\> Těstoviny \\> Celozrnné těstoviny$",
+    "output_value": "Zdravé potraviny > Varenie a pečenie > Cestoviny > Celozrnné cestoviny",
+    "position": 354
   }
 ]
