@@ -67,6 +67,7 @@ Pravidla jsou implementovaná v `transform.py`. Číslování priorit je pozůst
 | 2 | price EUR | `price` | ÷ 24,5, 2 des. místa |
 | 3 | standart price EUR | `standardPrice` | ÷ 24,7, 2 des. místa |
 | 4 | nákupní cena EUR | `purchasePrice` | ÷ 24,7, 2 des. místa |
+| 4b | Poukazy — pevné ceny | `price`, `standardPrice`, `actionPrice` | Kódy 9923/9922/9921 → 20/40/80 €, akční cena prázdná (`FIXED_PRICES_EUR`, přepíše výsledek pravidel 1–3) |
 | 5 | Vlastnosti | `filteringProperty:Vlastnosti` | Překlad CZ → SK (19 hodnot) |
 | 6 | Bez Lepku příznak | `bez-lepkuFlagActive` | Přejmenování na `custom2FlagActive` |
 | 7–18 | >> kategorie | `defaultCategory`, `categoryText1–11` | Regex: odstraní `^>> `, nahradí `>>` za `>` |

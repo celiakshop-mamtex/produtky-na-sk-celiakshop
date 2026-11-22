@@ -65,6 +65,14 @@ PRICE_RULES = {
     "purchasePrice": Decimal("24.7"),
 }
 
+# Poukazy: pevná nominální hodnota v EUR místo přepočtu kurzem
+# (CZ 500/1000/2000 Kč by vyšlo 20,41/40,82/81,63 €). Přepíše price i standardPrice.
+FIXED_PRICES_EUR = {
+    "9923": "20,00",  # Poukaz v hodnotě 500 Kč → 20 €
+    "9922": "40,00",  # Poukaz v hodnotě 1000 Kč → 40 €
+    "9921": "80,00",  # Poukaz v hodnotě 2000 Kč → 80 €
+}
+
 # Pravidlo 5: překlad vlastností CZ → SK (batch_rewriting_values, regex=false)
 VLASTNOSTI_MAP = {
     "Bez přidaného cukru;Bez lepku":                                  "Bez pridaného cukru;Bez lepku",
@@ -148,6 +156,13 @@ def transform_row(src: dict, category_patterns: list) -> dict:
     for field, divisor in PRICE_RULES.items():
         if row.get(field):
             row[field] = convert_price(row[field], divisor)
+
+    # Poukazy: pevné ceny v EUR
+    fixed = FIXED_PRICES_EUR.get(row.get("code", ""))
+    if fixed:
+        row["price"] = fixed
+        row["standardPrice"] = fixed
+        row["actionPrice"] = ""
 
     # Pravidlo 5: Vlastnosti
     prop = "filteringProperty:Vlastnosti"
