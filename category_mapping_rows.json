@@ -1763,5 +1763,40 @@
     "input_value": "^Zdravé potraviny \\> Vaření a pečení \\> Těstoviny \\> Celozrnné těstoviny$",
     "output_value": "Zdravé potraviny > Varenie a pečenie > Cestoviny > Celozrnné cestoviny",
     "position": 354
+  },
+  {
+    "input_value": "^Bezlepkové potraviny \\> Bezlepkové mouky a směsi \\> Bezlepkové směsi na pečení a vaření \\> Sladké pečení \\> Bezlepkové směsi na pečení$",
+    "output_value": "Bezlepkové potraviny > Bezlepkové múky a zmesi > Bezlepkové zmesi na pečenie a varenie > Sladké pečenie > Bezlepkové zmesi na pečenie",
+    "position": 355
+  },
+  {
+    "input_value": "^Bezlepkové potraviny \\> Bezlepkové proteinové potraviny$",
+    "output_value": "Bezlepkové potraviny > Bezlepkové proteínové potraviny",
+    "position": 356
+  },
+  {
+    "input_value": "^Bezlepkové potraviny \\> Vitamíny pro celiaky$",
+    "output_value": "Bezlepkové potraviny > Vitamíny pre celiakov",
+    "position": 357
+  },
+  {
+    "input_value": "^Zdravé potraviny \\> Proteinové potraviny$",
+    "output_value": "Zdravé potraviny > Proteínové potraviny",
+    "position": 358
+  },
+  {
+    "input_value": "^Zdravé potraviny \\> Sportovní výživa$",
+    "output_value": "Zdravé potraviny > Športová výživa",
+    "position": 359
+  },
+  {
+    "input_value": "^Zdravé potraviny \\> Vaření a pečení \\> Konzervované potraviny \\> Rybí konzervy$",
+    "output_value": "Zdravé potraviny > Varenie a pečenie > Konzervované potraviny > Rybacie konzervy",
+    "position": 360
+  },
+  {
+    "input_value": "^Zdravé potraviny \\> Vaření a pečení \\> Oleje$",
+    "output_value": "Zdravé potraviny > Varenie a pečenie > Oleje",
+    "position": 361
   }
 ]
